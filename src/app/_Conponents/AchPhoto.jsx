@@ -1,9 +1,17 @@
 
 
 const AchPhoto = () => {
+    const Style = {
+        backgroundImage: "url('/stageimg.jpg')",
+        backgroundPosition: 'fix',
+        backgroundSize: 'cover',
+    };
   return (
-    <div className=" achimg  bg-fixed w-full h-screen bgImage" >
-       
+    <div className=" h-screen bg-transparent  w-full" style={
+       Style
+        
+    }>
+        
     </div>
   )
 }

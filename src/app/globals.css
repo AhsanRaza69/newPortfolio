@@ -28,6 +28,6 @@
 }
 
 .achimg{ 
-  background-image: url('/public/stageimg.jpg');
+  background-position: center;
   background-size: cover;
 }
