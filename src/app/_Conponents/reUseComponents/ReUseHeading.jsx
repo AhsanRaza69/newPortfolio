@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReUseHeading = ({topPara,mainTitle}) => {
   return (
-    <div className=' w-full pb-8  px-3 '>
+    <div className=' w-full py-4  px-3 '>
       <p className=' uppercase   font-[500] text-md text-webred'>
         {topPara}
       </p>

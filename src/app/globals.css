@@ -66,3 +66,7 @@
 .bgeffect{
   background: linear-gradient(145deg, #1e2024, #23272b);
 }
+
+.navLinks .active{
+  color: white;
+}

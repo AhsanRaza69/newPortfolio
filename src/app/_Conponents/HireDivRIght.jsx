@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const HireDivRIght = () => {
   return (
-    <div className=' w-full  shadow-[#1c1e22_3px_0px_5px_4px] rounded-lg col-span-2 px-3 py-4'>
+    <div className=' w-full  shadow-[#1c1e22_3px_0px_5px_4px] rounded-lg col-span-2  py-4'>
       <div className="  w-full col-span-2 px-[15px]  h-screen"> 
           <form action="" className='  text-gray-400  flex flex-col gap-y-5'>
            <div className="   md:flex  items-baseline  gap-5">

@@ -13,7 +13,7 @@ const HIreSec = () => {
        <div className=" text-center">
         <ReUseHeading topPara={"Let's meet!"}  mainTitle={"Hire Me 🚣"}/> 
         </div>
-       <div className=" grid w-full grid-cols-1 px-3 md:px-8 justify-center gap-y-6   lg:grid-cols-3 lg:gap-x-4">
+       <div className=" grid w-full grid-cols-1 md:px-3 md:px-8 justify-center gap-y-6   lg:grid-cols-3 lg:gap-x-4">
           <HireDivleft/>
           <HireDivRight/>
        </div>
