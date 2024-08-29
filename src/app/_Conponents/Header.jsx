@@ -36,6 +36,20 @@ const Header = () => {
     ]
 
     useEffect(() => {
+        if (Nav) {
+      
+            document.body.style.overflow = 'hidden';
+        } else {
+      
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [Nav]);
+
+    useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 200) {
                 setIsScrolled(true);
@@ -43,6 +57,8 @@ const Header = () => {
                 setIsScrolled(false);
             }
         };
+
+        
 
         window.addEventListener('scroll', handleScroll);
 
@@ -84,7 +100,7 @@ const Header = () => {
                 </div>
                 {
                     Nav && (
-                        <div className=' bg-[#191b1e] w-[310px] py-3 text-gray-400 gap-4 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen overflow-y-auto flex-col flex'>
+                        <div className=' bg-[#191b1e] w-[330px] py-2 text-gray-400 gap-2 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen overflow-hidden flex-col flex'>
                             <div className=" flex  items-center ">
                                 <Image src="/logo.png" alt='Logo'
                                     width={130}
@@ -93,8 +109,8 @@ const Header = () => {
                                 {/* <h2 className='darktext'>INBIO</h2> */}
                             </div>
                             <h2 >Inbio is a all in one personal portfolio WordPress theme. You can customize everything.</h2>
-                            <hr className=' w-full my-4 border-gray-300' />
-                            <ul className=' flex flex-col  gap-6 ' >
+                            <hr className=' w-full my-2 border-gray-300' />
+                            <ul className=' flex flex-col  gap-2 ' >
                                 {
                                     links.map((item, ind) => (
                                         <div className=' w-full  py-3 h-full' >
@@ -118,7 +134,7 @@ const Header = () => {
                                 }
 
                             </ul>
-                            <hr className=' w-full my-4 border-gray-300' />
+                            <hr className=' w-full my-1 border-gray-300' />
                             <SocialInfo/>
                         </div>
                     )
