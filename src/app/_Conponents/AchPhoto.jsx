@@ -2,15 +2,14 @@
 
 const AchPhoto = () => {
     const Style = {
-        backgroundImage: "url('/stageimg.jpg')",
-        backgroundPosition: 'fix',
-        backgroundSize: 'cover',
+      backgroundImage: "url('/stageimg.jpg')",
+      backgroundPosition: 'center', 
+      backgroundSize: 'cover',      
+      backgroundAttachment: 'fixed'
     };
   return (
-    <div className=" h-screen bg-transparent  w-full" style={
-       Style
-        
-    }>
+    <div className=" h-[90vh] bg-transparent my-6  w-full" style={
+       Style }>
         
     </div>
   )

@@ -30,7 +30,7 @@ const LatestPhoto = () => {
     responsive: [
     
       {
-        breakpoint: 600,
+        breakpoint: 742,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -49,6 +49,8 @@ const LatestPhoto = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     

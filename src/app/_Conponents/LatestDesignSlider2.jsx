@@ -28,9 +28,8 @@ const LatestDesignSlider2 = () => {
     dots: false,
     arrows: true,
     responsive: [
-    
       {
-        breakpoint: 600,
+        breakpoint: 742,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -49,6 +48,8 @@ const LatestDesignSlider2 = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     
@@ -56,7 +57,7 @@ const LatestDesignSlider2 = () => {
 
   return (
     <div className="   text-white w-full relative flex  flex-col gap-3    ">
-      <Slider  {...settings} className=" ">
+      <Slider  {...settings} className="slider-container">
         <div className=' fle '>
         <LatestDesignSlider topPara={"GAllery"} 
         para="Front view woman wearing trucker hat. 

@@ -8,7 +8,9 @@ import LatestPhoto from './LatestPhoto'
 const LatestProject = () => {
     return (
         <div className=" py-8 flex-col gap-4 ">
+        <div className="text-center">
         <ReUseHeading topPara={"Graphic designer, webdesigner & webflow expert"} mainTitle={"My Latest Photography"} />
+        </div>
         <Container className=" flex flex-col gap-4 ">
           <div className=" w-full overflow-x-hidden flex flex-col">
           <LatestPhoto/>
