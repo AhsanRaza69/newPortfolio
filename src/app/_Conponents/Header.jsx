@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from 'react-scroll';
 import React, { useEffect, useState } from 'react'
 import ReUseButton from './reUseComponents/ReUseButton'
 
@@ -10,24 +10,24 @@ const Header = () => {
     const links = [
         {
             name: "Hello",
-            adress: "/",
+            adress: "",
            color: true
         },
         {
             name: "Design",
-            adress: "/design"
+            adress: "design"
         },
         {
             name: "Photos",
-            adress: "/photos"
+            adress: "photos"
         },
         {
             name: "pricing",
-            adress: "/pricing"
+            adress: "pricing"
         },
         {
             name: "hire me",
-            adress: "/hireme"
+            adress: "hireme"
         },
     ]
 
@@ -61,8 +61,13 @@ const Header = () => {
                 <ul className=' flex  gap-8 items-center' >
                     {
                         links.map((item, ind) => (
-                            <li key={ind} className={` ${ item.color ? " text-white" : ""} hover:text-webred duration-300      font-medium text-[13px] hidden md:flex  text-darkcolor uppercase`}>
-                                <Link href={item.adress}>
+                            <li key={ind} className={` ${ item.color ? " text-white" : ""} hover:text-webred duration-300      font-medium text-[13px] hidden lg:flex  text-darkcolor uppercase`}>
+                                <Link
+                                 to={item.adress} 
+                                 spy={true} 
+                                 smooth={true} 
+                                 offset={-150}
+                                 duration={1000} >
                                     {item.name}
                                 </Link>
                             </li>
@@ -73,6 +78,10 @@ const Header = () => {
                 </ul>
                 <div>
                 </div>
+            </div>
+
+            <div className="">
+                
             </div>
         </div>
     )

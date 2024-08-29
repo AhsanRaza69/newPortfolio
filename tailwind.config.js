@@ -7,8 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'bgImage': "url('/public/stageimg.jpg')",
+      
+      boxShadow: {
+        'borders': 'inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225',
       },
       colors: {
         webred: "#ff014f",
@@ -21,8 +22,10 @@ module.exports = {
   'xss': '320',
   'xs': '375px',
   'sm': '565px',
-   'md': '1080px',
-   'lg': '1440px',
+   'md': '756px',
+   'lg': '1020px',
+   'xl': '1920px',
+
   }
   },
   plugins: [],

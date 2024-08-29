@@ -57,7 +57,7 @@ const LatestPhoto = () => {
   };
 
   return (
-    <div className="   text-white w-full relative flex  flex-col gap-3    ">
+    <div className="   text-white w-full relative flex  flex-col gap-3    " id="photos">
       <Slider  {...settings} className=" ">
         <div className=' fle '>
         <LatestDesignSlider topPara={"GAllery"} 

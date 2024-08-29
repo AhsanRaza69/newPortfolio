@@ -6,6 +6,11 @@ import LatestProject from "./_Conponents/LatestPhotograph";
 import Achievementsec from "./_Conponents/Achievementsec";
 import AchPhoto from "./_Conponents/AchPhoto";
 import PricingSec from "./_Conponents/PricingSec";
+import TrustClientSec from "./_Conponents/TrustClientSec";
+import HireSec from "./_Conponents/HIreSec";
+import Footer from "./_Conponents/Footer";
+
+
 
 
 export default function Home() {
@@ -16,9 +21,12 @@ export default function Home() {
    <LatestSec/>
    <LatestProject/>
    <Achievementsec/>
-  
-   <AchPhoto/>
+     <AchPhoto/>
    <PricingSec/>
+   <TrustClientSec/>
+   <HireSec/>
+   <Footer/>
+   
   
    
    

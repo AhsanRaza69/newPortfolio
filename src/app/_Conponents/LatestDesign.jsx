@@ -4,6 +4,7 @@ import ReUseHeading from './reUseComponents/ReUseHeading'
 import ReUseButton from './reUseComponents/ReUseButton'
 import LatestDesignSlider from './LatestDesignSlider'
 import LatestDesignSlider2 from './LatestDesignSlider2'
+import Blackline from './Blackline'
 
 const LatestSec = () => {
   return (
@@ -19,7 +20,7 @@ const LatestSec = () => {
       </div>
         </div>
 
-        <hr className=' w-full border-black/50 my-6' />
+        <Blackline/>
        
       
 

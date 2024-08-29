@@ -2,10 +2,12 @@ import React from 'react'
 import Container from './Container'
 import ReUseHeading from './reUseComponents/ReUseHeading'
 import PriceCard from './PriceCard'
+import Blackline from './Blackline'
 
 const PricingSec = () => {
   return (
-    <Container className=" my-20 grid gap-6 md:grid-cols-3">
+   <div className=" poppins" id='pricing'>
+     <Container className=" my-20 grid gap-6 md:grid-cols-3">
          <div className='  flex-col gap-3 items-start text-left'>
          <ReUseHeading
          topPara={"Pricing"}
@@ -29,7 +31,11 @@ const PricingSec = () => {
           />
           </div>
 
+        
+
     </Container>
+    <Blackline/>
+   </div>
   )
 }
 
