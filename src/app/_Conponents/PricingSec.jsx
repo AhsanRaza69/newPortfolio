@@ -7,8 +7,8 @@ import Blackline from './Blackline'
 const PricingSec = () => {
   return (
    <div className=" poppins" id='pricing'>
-     <Container className=" my-20 grid gap-6 md:grid-cols-3">
-         <div className='  flex-col gap-3 items-start text-left'>
+     <Container className=" my-20 grid gap-6 lg:grid-cols-3">
+         <div className='  flex-col gap-3  text-left'>
          <ReUseHeading
          topPara={"Pricing"}
          mainTitle={"Pricing 🚀"}
