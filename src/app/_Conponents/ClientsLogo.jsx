@@ -15,7 +15,7 @@ const ClientsLogo = ({logo,ClientName}) => {
           className=" hover:scale-125 duration-200 "
         />
         </div>
-        <div className="border w-full border-zinc-900"></div>
+        <div className="border w-full border-[#1a1d23]"></div>
         <h2 className="  text-gray-300 font-[500] hover:text-webred duration-200">{ClientName}</h2>
     </div>
   )

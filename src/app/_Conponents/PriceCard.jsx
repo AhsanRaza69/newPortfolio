@@ -4,7 +4,7 @@ import ReUseButton from "./reUseComponents/ReUseButton";
 
 const PriceCard = ({title,Stiitle,price}) => {
   return (
-    <div className=' text-white  w-full px-9 py-8 shadow-zinc-900 shadow-md flex-col gap-y-3 rounded-xl flex'>
+    <div className=' text-white  w-full px-9 py-8 shadow-[#1c1e22_2px_2px_5px_4px] flex-col gap-y-3 rounded-xl flex'>
         <h2 className=" font-medium">
             {title}
         </h2>

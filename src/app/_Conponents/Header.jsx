@@ -84,7 +84,7 @@ const Header = () => {
                 </div>
                 {
                     Nav && (
-                        <div className=' bg-[#191b1e] w-[310px] py-3 text-gray-400 gap-4 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen flex-col flex'>
+                        <div className=' bg-[#191b1e] w-[310px] py-3 text-gray-400 gap-4 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen overflow-y-auto flex-col flex'>
                             <div className=" flex  items-center ">
                                 <Image src="/logo.png" alt='Logo'
                                     width={130}
@@ -97,10 +97,13 @@ const Header = () => {
                             <ul className=' flex flex-col  gap-6 ' >
                                 {
                                     links.map((item, ind) => (
-                                        <div className='border w-full h-full' onClick={() => setNav(!Nav)}>
-                                        <li key={ind} className={` navLinks  hover:text-webred duration-300  border     font-medium text-[13px]    flex  text-darkcolor uppercase`} >
+                                        <div className=' w-full  py-3 h-full' >
+                                        <li key={ind} className={` navLinks  hover:text-webred duration-300       font-medium text-[13px]    flex  text-darkcolor uppercase`} >
                                            <Link 
-                                           
+                                           onClick={(e) => {
+                                            e.stopPropagation(); 
+                                            setNav(false);
+                                        }}
                                                 to={item.adress}
                                                 spy={true}
                                                 smooth={true}

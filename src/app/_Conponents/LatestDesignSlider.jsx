@@ -4,7 +4,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 function LatestDesignSlider({topPara,para,gap,img}) {
   return (
     <div className={` w-full py-3    px-2 `}>
-              <div className="shadow-xl border-webColor bg-zinc-900/40 bgg gap-y-3 py-6 px-2 md:px-8  rounded-lg items-center justify-center ) flex flex-col  bg-center  ">
+              <div className="shadow-[#1c1e22_2px_2px_5px_4px] bgg gap-y-3 py-6 px-2 md:px-8  rounded-lg items-center justify-center ) flex flex-col  bg-center  ">
               <div className=" w-full  overflow-hidden rounded-md  ">
          <Image src={img} className='hover:scale-110 h-auto duration-300 transition-all w-full  rounded-md ' alt='Logo'
                     width={300}
