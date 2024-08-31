@@ -9,6 +9,7 @@ import PricingSec from "./_Conponents/PricingSec";
 import TrustClientSec from "./_Conponents/TrustClientSec";
 import HireSec from "./_Conponents/HIreSec";
 import Footer from "./_Conponents/Footer";
+import FixButton from "./_Conponents/FixButton";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
    <TrustClientSec/>
    <HireSec/>
    <Footer/>
+   <FixButton/>
    
   
    

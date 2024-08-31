@@ -80,13 +80,13 @@ const Header = () => {
                 <ul className=' flex  gap-8 items-center' >
                     {
                         links.map((item, ind) => (
-                            <li key={ind} className={` navLinks  hover:text-webred duration-300      font-medium text-[13px] hidden lg:flex  text-darkcolor uppercase`}>
+                            <li key={ind} className={` navLinks cursor-pointer  hover:text-webred duration-300      font-medium text-[13px] hidden lg:flex  text-darkcolor uppercase`}>
                                 <Link
                                     to={item.adress}
                                     spy={true}
                                     smooth={true}
                                     offset={-150}
-                                    duration={1000} >
+                                    duration={2000} >
                                     {item.name}
                                 </Link>
                             </li>
@@ -114,7 +114,7 @@ const Header = () => {
                                 {
                                     links.map((item, ind) => (
                                         <div className=' w-full  py-3 h-full' >
-                                        <li key={ind} className={` navLinks  hover:text-webred duration-300       font-medium text-[13px]    flex  text-darkcolor uppercase`} >
+                                        <li key={ind} className={` cursor-pointer navLinks  hover:text-webred duration-300       font-medium text-[13px]    flex  text-darkcolor uppercase`} >
                                            <Link 
                                            onClick={(e) => {
                                             e.stopPropagation(); 
@@ -124,7 +124,7 @@ const Header = () => {
                                                 spy={true}
                                                 smooth={true}
                                                 offset={-150}
-                                                duration={1000} >
+                                                duration={2000} >
                                                 {item.name}
                                             </Link>
                                         </li>
