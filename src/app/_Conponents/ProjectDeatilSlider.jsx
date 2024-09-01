@@ -31,7 +31,7 @@ const Projectdeslider = () => {
     slidesToShow: 1 ,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,

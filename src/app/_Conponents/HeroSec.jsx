@@ -6,15 +6,16 @@ import ProjectDetail from './ProjectDetail'
 import { useScroll,motion, useTransform } from 'framer-motion';
 
 const HeroSec = () => {
- 
+  
   const { scrollY } = useScroll();
-
+  
   // Example: Transform the opacity based on scroll position
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-
+  // const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  
   return (
     <div className="" id='hero'>
-      <Container className=' text-white mb-[13rem]  md:mb-[13x rem] relative  flex w-full justify-center'>
+      <ProjectDetail  />
+      <Container className=' text-white mb-[60%] md:mb-[40%]  relative  flex w-full justify-center'>
 
         <div className="   flex justify-center relative ">
 
@@ -26,9 +27,7 @@ const HeroSec = () => {
 
             <motion.div
 
-              style={{
-                opacity,
-              }}
+          
 
               className=" absolute     z-0  top-[20%]    md:top-[17%]  flex justify-center  items-center flex-col  w-full  ">
               <Image src="/heroimg.png" className=' h-auto w-[100%]  sm:w-[70%] md:w-[80%]   ' alt='Logo'
@@ -45,7 +44,6 @@ const HeroSec = () => {
 
         </div>
       </Container>
-      <ProjectDetail  />
     </div>
   )
 }
