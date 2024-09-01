@@ -8,7 +8,7 @@ const LatestDesignSlider2 = () => {
   const NextArrow = (props) => {
     const { onClick } = props
     return (
-      <div className=" hidden p-3 bg-webColor hover:text-webred rounded-full cursor-pointer duration-200  text-2xl lg:flex items-center justify-center z-20 absolute left-5 top-[40%]" onClick={onClick}>
+      <div className=" hidden p-3 bg-webColor hover:text-webred rounded-full cursor-pointer duration-200  text-2xl lg:flex items-center justify-center z-20 absolute -left-4 top-[40%]" onClick={onClick}>
         <PiCaretLeftLight />
       </div>
     )
@@ -17,7 +17,7 @@ const LatestDesignSlider2 = () => {
 
     const { onClick } = props
     return (
-      <div className="p-3 hidden bg-webColor hover:text-webred rounded-full cursor-pointer duration-200  text-2xl lg:flex items-center justify-center z-20 absolute      right-5 top-[40%]" onClick={onClick}>
+      <div className="p-3 hidden bg-webColor hover:text-webred rounded-full cursor-pointer duration-200  text-2xl lg:flex items-center justify-center z-20 absolute      -right-8 top-[40%]" onClick={onClick}>
         <PiCaretRightLight />
       </div>
 

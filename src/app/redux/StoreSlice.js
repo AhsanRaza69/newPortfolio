@@ -6,13 +6,13 @@ export const Storeslice  = createSlice({
     dynamicRouteCOn: false,
   },
   reducers: {
-    DynamicDAta: (state) => {
-      state.dynamicRouteCOn  = !dynamicRouteCOn
+    DynamicDAtaFun: (state,actions) => {
+      state.dynamicRouteCOn  =  !state.dynamicRouteCOn
     },
   
 }
 });
 
-export const { DynamicDAta} = Storeslice.actions;
+export const { DynamicDAtaFun} = Storeslice.actions;
 
 export default Storeslice.reducer;

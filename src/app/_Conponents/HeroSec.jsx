@@ -45,7 +45,7 @@ const HeroSec = () => {
 
         </div>
       </Container>
-      {/* <ProjectDetail  /> */}
+      <ProjectDetail  />
     </div>
   )
 }

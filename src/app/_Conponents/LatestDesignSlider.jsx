@@ -1,9 +1,13 @@
+"use client"
 import Image from 'next/image'
 import { IoIosHeartEmpty } from "react-icons/io";
+import { useDispatch } from 'react-redux';
+import { DynamicDAtaFun } from '../redux/StoreSlice';
 
 
 
 function LatestDesignSlider({topPara,para,gap,img}) {
+  const dispatch = useDispatch()
   return (
     <div className={` w-full py-3    px-2 `}>
               <div className=" shadow-[#1c1e22_2px_2px_5px_4px] bgg gap-y-3 py-6 px-2 md:px-8  rounded-lg items-center justify-center ) flex flex-col  bg-center  ">
@@ -23,7 +27,7 @@ function LatestDesignSlider({topPara,para,gap,img}) {
                     </span>
                 </div>
 
-                <h2 className=' hover:text-webred duration-300 transition-all cursor-pointer text-calmp(20,5vh,23px) font-semibold '>
+                <h2 onClick={() => dispatch(DynamicDAtaFun())} className=' hover:text-webred duration-300 transition-all cursor-pointer text-calmp(20,5vh,23px) font-semibold '>
                     {para}
                 </h2>
               </div>
