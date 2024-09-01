@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { IoMenu } from "react-icons/io5";
 import React, { useEffect, useState } from 'react'
 import ReUseButton from './reUseComponents/ReUseButton'
-import ResponsiveNavBar from './ResponsiveNavBar'
+import { useScroll,motion, useTransform } from 'framer-motion';
 import SocialInfo from './SocialInfo';
 
 const Header = () => {
@@ -66,6 +66,16 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const menuVariants = {
+        hidden: { x: "100%" }, // Start completely off-screen to the left
+        visible: { x: 0 }, // End in its natural position on-screen
+      };
+
+    const itemVariants = {
+        hidden: { x: -200, opacity: 0 }, // Start off-screen to the left
+        visible: { x: 0, opacity: 1 }, // End at the final position on-screen
+      };
     return (
         <div className={`${isScrolled ? '  backdrop-blur-md fixed top-0 left-0 w-full bg-webColor/80 shadow-md z-50' : 'relative'
             } transition-all duration-300 flex px-6  lg:px-12 py-4 justify-between `} >
@@ -100,21 +110,31 @@ const Header = () => {
                 </div>
                 {
                     Nav && (
-                        <div className=' bg-[#191b1e] w-[330px] py-2 text-gray-400 gap-2 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen overflow-hidden flex-col flex'>
-                            <div className=" flex  items-center ">
+                        <motion.div
+                        initial="hidden"
+                            animate="visible"
+                            transition={{ staggerChildren: 0.1 }}
+                        className="menu">
+                            <div className=' bg-[#191b1e] w-[330px] py-2 text-gray-400 gap-2 px-3 absolute top-0 py left-0 md:w-[375px] z-40 h-screen overflow-hidden flex-col flex'>
+                            <motion.div 
+                            variants={itemVariants}
+                            className=" flex  items-center ">
                                 <Image src="/logo.png" alt='Logo'
                                     width={130}
                                     height={130}
                                 />
                                 {/* <h2 className='darktext'>INBIO</h2> */}
-                            </div>
-                            <h2 >Inbio is a all in one personal portfolio WordPress theme. You can customize everything.</h2>
+                            </motion.div>
+                            <motion.h2 
+                            variants={itemVariants}>Inbio is a all in one personal portfolio WordPress theme. You can customize everything.</motion.h2>
                             <hr className=' w-full my-2 border-gray-300' />
-                            <ul className=' flex flex-col  gap-2 ' >
+                            <motion.ul
+                             className=' flex flex-col  gap-2 ' >
                                 {
                                     links.map((item, ind) => (
                                         <div className=' w-full  py-3 h-full' >
-                                        <li key={ind} className={` cursor-pointer navLinks  hover:text-webred duration-300       font-medium text-[13px]    flex  text-darkcolor uppercase`} >
+                                        <motion.li
+                                        variants={itemVariants} key={ind} className={` cursor-pointer navLinks  hover:text-webred duration-300       font-medium text-[13px]    flex  text-darkcolor uppercase`} >
                                            <Link 
                                            onClick={(e) => {
                                             e.stopPropagation(); 
@@ -127,16 +147,17 @@ const Header = () => {
                                                 duration={2000} >
                                                 {item.name}
                                             </Link>
-                                        </li>
+                                        </motion.li>
                                            </div>
 
                                     ))
                                 }
 
-                            </ul>
+                            </motion.ul>
                             <hr className=' w-full my-1 border-gray-300' />
                             <SocialInfo/>
                         </div>
+                        </motion.div>
                     )
                 }
                 <div>

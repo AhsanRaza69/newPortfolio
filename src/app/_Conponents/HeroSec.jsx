@@ -3,18 +3,27 @@ import React, { useEffect } from 'react'
 import Container from './Container'
 import Image from 'next/image'
 import ProjectDetail from './ProjectDetail'
-import { useScroll,motion, useTransform } from 'framer-motion';
+import { useScroll, motion, useTransform } from 'framer-motion';
 
 const HeroSec = () => {
-  
+
   const { scrollY } = useScroll();
-  
-  // Example: Transform the opacity based on scroll position
-  // const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-  
+
+  const imageVariants = {
+    hidden: { y: 50, opacity: 0 }, // Start position below and invisible
+    visible: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        duration: 0.2, // Adjust the duration of the animation
+        ease: "easeOut"
+      }
+    } // End position at its original place and fully visible
+  };
+
   return (
     <div className="" id='hero'>
-      <ProjectDetail  />
+      <ProjectDetail />
       <Container className=' text-white mb-[60%] md:mb-[40%]  relative  flex w-full justify-center'>
 
         <div className="   flex justify-center relative ">
@@ -26,8 +35,10 @@ const HeroSec = () => {
             <p className=' text-xs  lg:text-lg text-darkcolor  sm:text-right'>based in Nevada, USA ❤️</p>
 
             <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
 
-          
 
               className=" absolute     z-0  top-[20%]    md:top-[17%]  flex justify-center  items-center flex-col  w-full  ">
               <Image src="/heroimg.png" className=' h-auto w-[100%]  sm:w-[70%] md:w-[80%]   ' alt='Logo'
@@ -38,8 +49,8 @@ const HeroSec = () => {
                 width={650}
                 height={100}
               />
-          </motion.div>
-            </div>
+            </motion.div>
+          </div>
 
 
         </div>
