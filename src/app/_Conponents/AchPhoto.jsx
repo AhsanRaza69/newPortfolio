@@ -8,7 +8,7 @@ const AchPhoto = () => {
       backgroundAttachment: 'fixed'
     };
   return (
-    <div className=" py-[300px] bg-transparent my-8  w-full" style={
+    <div className=" py-[300px]  bg-transparent my-8  w-full" style={
        Style }>
         
     </div>

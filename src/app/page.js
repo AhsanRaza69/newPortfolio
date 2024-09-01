@@ -13,7 +13,6 @@ import FixButton from "./_Conponents/FixButton";
 
 
 
-
 export default function Home() {
   return (
     <main >

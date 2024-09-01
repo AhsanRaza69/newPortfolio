@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { IoIosHeartEmpty } from "react-icons/io";
 
+
+
 function LatestDesignSlider({topPara,para,gap,img}) {
   return (
     <div className={` w-full py-3    px-2 `}>
@@ -10,7 +12,7 @@ function LatestDesignSlider({topPara,para,gap,img}) {
                     width={300}
                     height={300}
                 />
-                    
+                  
                 </div>
                 <div className="  flex w-full items-center">
                     <span className=" uppercase flex items-center w-full justify-between">
@@ -21,10 +23,14 @@ function LatestDesignSlider({topPara,para,gap,img}) {
                     </span>
                 </div>
 
-                <h2 className=' text-calmp(20,5vh,23px) font-semibold '>
+                <h2 className=' hover:text-webred duration-300 transition-all cursor-pointer text-calmp(20,5vh,23px) font-semibold '>
                     {para}
                 </h2>
               </div>
+
+
+             {/* <ProjectDetail/> */}
+             
 
 
     </div>

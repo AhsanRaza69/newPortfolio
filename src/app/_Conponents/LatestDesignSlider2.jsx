@@ -57,7 +57,7 @@ const LatestDesignSlider2 = () => {
   };
 
   return (
-    <div className="   text-white w-full relative flex  flex-col gap-3    " id="design">
+    <div className="   text-white w-full  flex  flex-col gap-3    " id="design">
       <Slider  {...settings} className="slider-container">
         <div className=' fle '>
         <LatestDesignSlider topPara={"GAllery"} 

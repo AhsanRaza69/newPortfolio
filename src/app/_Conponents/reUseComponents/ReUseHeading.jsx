@@ -26,7 +26,7 @@ const ReUseHeading = ({topPara,mainTitle}) => {
         {topPara}
       </p>
       <h2 className='  font-bold  text-gray-300  text-[clamp(34px,5vw,60px)] '>{mainTitle}</h2>
-    </div>
+    </  div>
   )
 }
 

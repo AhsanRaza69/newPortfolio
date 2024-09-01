@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import Container from './Container'
 import Image from 'next/image'
+import ProjectDetail from './ProjectDetail'
 import { useScroll,motion, useTransform } from 'framer-motion';
 
 const HeroSec = () => {
@@ -19,8 +20,8 @@ const HeroSec = () => {
 
           <div className="flex-col flex  justify-center  text-center ">
             <h3 className=' text-[clamp(12px,5vw,36px)] text-darkcolor playfair'>👋my name is Inbio & I am a freelance</h3>
-            <h1 className=' z-10  font-semibold archivor  text-[clamp(30px,9vw,130px)] '>Webdesigner</h1>
-            <h2 className=' playfair text-[clamp(30px,9vw,130px)] font-[500]'>&Photographer</h2>
+            <h1 className=' z-10  font-[900] archivor  text-[clamp(30px,9vw,130px)] '>Webdesigner</h1>
+            <h2 className=' playfair text-[clamp(30px,9vw,130px)]  oul'>&Photographer</h2>
             <p className=' text-xs  lg:text-lg text-darkcolor  sm:text-right'>based in Nevada, USA ❤️</p>
 
             <motion.div
@@ -44,6 +45,7 @@ const HeroSec = () => {
 
         </div>
       </Container>
+      {/* <ProjectDetail  /> */}
     </div>
   )
 }

@@ -10,6 +10,14 @@
 
 
 
+.oul {
+  font-weight: 900;
+  line-height: 1em;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  }
+
+
 .playfair{
   font-family: "Playfair Display", serif;
 
