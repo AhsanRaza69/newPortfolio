@@ -103,7 +103,15 @@ const Header = () => {
 
                         ))
                     }
-                    <ReUseButton title={"Hello@gmail.com"} />
+                    <div className=' hidden sm:block'>
+      <Link href={"link"}>
+
+        <button className={` z-10  transition 
+         shadow-[#1c1e22_2px_2px_5px_4px]   ease-in-outout bg-webColor text-xs  sm:text-sm hover:text-webred text-webred  px-2 py-2   md:px-6 hover:-translate-y-2  duration-300 flex items-center justify-center md:py-4 `} >
+          <span className=' text-xs md:text-sm font-[500]'>hello@name.com </span>
+        </button>
+      </Link>
+    </div>
                 </ul>
                 <div className=" lg:hidden p-3 ml-3 z-50  bg-zinc-900 rounded-full text-webred">
                     <IoMenu size={25} onClick={() => setNav(!Nav)} />

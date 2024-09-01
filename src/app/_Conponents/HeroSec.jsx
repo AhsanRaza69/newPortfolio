@@ -15,7 +15,7 @@ const HeroSec = () => {
       y: 0, 
       opacity: 1,
       transition: {
-        duration: 0.2, // Adjust the duration of the animation
+        duration: 0.2   , // Adjust the duration of the animation
         ease: "easeOut"
       }
     } // End position at its original place and fully visible
