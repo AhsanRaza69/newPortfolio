@@ -28,7 +28,7 @@ const HeroSec = () => {
 
         <div className="   flex justify-center relative ">
 
-          <div className="flex-col flex  justify-center  text-center ">
+          <div className="flex-col flex gap-y-4  justify-center  text-center ">
             <h3 className=' text-[clamp(12px,5vw,36px)] text-darkcolor playfair'>👋my name is Inbio & I am a freelance</h3>
             <h1 className=' z-10  font-[900] archivor  text-[clamp(30px,9vw,130px)] '>Webdesigner</h1>
             <h2 className=' playfair text-[clamp(30px,9vw,130px)]  oul'>&Photographer</h2>

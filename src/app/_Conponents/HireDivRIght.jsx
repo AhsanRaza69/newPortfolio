@@ -3,6 +3,7 @@ import { GiSevenPointedStar } from 'react-icons/gi'
 import Link from 'next/link'
 
 const HireDivRIght = () => {
+  
   return (
     <div className=' w-full  shadow-[#1c1e22_3px_0px_5px_4px] rounded-lg col-span-2  py-4'>
       <div className="  w-full col-span-2 px-[15px]  "> 

@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         webred: "#ff014f",
-        webColor: "#212428",
+        webColor: "#212440",
         darkcolor: "#878e99",
         // webgray :"##c4afde"
       },
