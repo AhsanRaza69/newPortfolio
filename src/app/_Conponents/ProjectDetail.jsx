@@ -27,7 +27,7 @@ const ProjectDetail = () => {
              <div className="  w-full">
                
                {/* div1/ */}
-               <div className=" grid gap-4 grid-cols-1 lg:grid-cols-2 ">
+               <div className=" grid gap-4 grid-cols-1  lg:grid-cols-2 ">
                 <div className=" relative  grid-cols-1">  
                   
                 <Projectdeslider/>
@@ -35,6 +35,7 @@ const ProjectDetail = () => {
                 <div className=" flex flex-col gap-6  text-gray-300">
                   <h2 className=' font-bold text-[clamp(24px,5vw,34px)]'>NFT Dashboard Application Development.</h2>
                   <p>Through a wide variety of mobile applications, we’ve developed a unique visual system.</p>
+                  
                   <div className=" grid grid-cols-1 gap-3 lg:grid-cols-2">
                     <Projectdetailspan name={"Client"} detail={"George Wallace"} />
                     <Projectdetailspan name={"Date"} detail={"15 June 2022"} />
