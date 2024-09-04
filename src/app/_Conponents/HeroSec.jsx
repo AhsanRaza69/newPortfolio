@@ -4,22 +4,11 @@ import Container from './Container'
 import Image from 'next/image'
 import ProjectDetail from './ProjectDetail'
 import { useScroll, motion, useTransform } from 'framer-motion';
+import { fadeIn} from './variant';
 
 const HeroSec = () => {
 
-  const { scrollY } = useScroll();
 
-  const imageVariants = {
-    hidden: { y: 50, opacity: 0 }, // Start position below and invisible
-    visible: { 
-      y: 0, 
-      opacity: 1,
-      transition: {
-        duration: 0.2   , // Adjust the duration of the animation
-        ease: "easeOut"
-      }
-    } // End position at its original place and fully visible
-  };
 
   return (
     <div className="" id='hero'>
@@ -35,20 +24,42 @@ const HeroSec = () => {
             <p className=' text-xs  lg:text-lg text-darkcolor  sm:text-right'>based in Nevada, USA ❤️</p>
 
             <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={imageVariants}
-
+              initial={{y:600, opacity : 0}}
+              animate={{y:0, opacity : 1}}
+              transition={{
+                delay:'0.2',
+                y:{
+                  type:'spring',
+                  stiffness:60
+                },
+                opacity:{duration:1},
+                ease:"easeIn",
+                duration:'0.4',
+              }}
 
               className=" absolute     z-0  top-[20%]    md:top-[17%]  flex justify-center  items-center flex-col  w-full  ">
-              <Image src="/heroimg.png" className=' h-auto w-[100%]  sm:w-[70%] md:w-[80%]   ' alt='Logo'
+              <Image src="/heroimg.png" className=' h-auto w-[100%]  sm:w-[70%] md:w-[70%]   ' alt='Logo'
                 width={650}
                 height={700}
               />
-              <Image src="/clientLogo.png" className=' h-auto w-[100%]  sm:w-[70%] md:w-[60%] xl:w-[50%]  ' alt='Logo'
+              <motion.div
+               initial={{y:-100, opacity : 0}}
+               whileInView={{y:0, opacity : 1}}
+               transition={{
+                 delay:'0.3',
+                 y:{
+                   type:'spring',
+                   stiffness:60
+                 },
+                 opacity:{duration:1},
+                 ease:"easeIn",
+                 duration:'0.4',
+               }} className="h-auto w-[100%]  sm:w-[70%] md:w-[60%] xl:w-[50%] ">
+              <Image src="/clientLogo.png" className='  ' alt='Logo'
                 width={650}
                 height={100}
               />
+              </motion.div>
             </motion.div>
           </div>
 

@@ -2,6 +2,8 @@
 import { PiCaretLeftLight, PiCaretRightLight } from "react-icons/pi";
 import LatestDesignSlider from './LatestDesignSlider';
 import Slider from "react-slick";
+import{motion}from 'framer-motion'
+
 
 
 const LatestDesignSlider2 = () => {
@@ -57,8 +59,17 @@ const LatestDesignSlider2 = () => {
   };
 
   return (
-    <div className="   text-white w-full  flex  flex-col gap-3    " id="design">
-      <Slider  {...settings} className="slider-container">
+    <motion.div
+    // initial={{y:400, opacity : 0}}
+    // whileInView={{y:0, opacity : 1}}
+    // transition={{
+    //   delay:'0.2',
+    //   opacity:{duration:1},
+    //   ease:"easeIn",
+    //   duration:'0.5',
+    // }}
+    className="  text-white w-full  flex  flex-col gap-3    " id="design">
+s      <Slider  {...settings} className="">
         <div className=' fle '>
         <LatestDesignSlider topPara={"GAllery"} 
         para="Front view woman wearing trucker hat. 
@@ -82,7 +93,7 @@ const LatestDesignSlider2 = () => {
         
 
       </Slider>
-    </div>
+    </motion.div>
   );
 }
 export default LatestDesignSlider2

@@ -3,6 +3,7 @@ import Container from './Container'
 import ReUseHeading from './reUseComponents/ReUseHeading'
 import PriceCard from './PriceCard'
 import Blackline from './Blackline'
+import { motion} from 'framer-motion'
 
 const PricingSec = () => {
   return (
@@ -21,9 +22,20 @@ const PricingSec = () => {
          </p>
          </div>
          <div className=" flex gap-2  ">
-          <PriceCard title={"STARTER"} Stiitle={"Try and decide."}
+          {/* <motion.div
+          initial={{y:400, opacity : 0}}
+          whileInView={{y:0, opacity : 1}}
+          transition={{
+            delay:'0.3',
+            opacity:{duration:1},
+            ease:"easeIn",
+            duration:'0.5',
+          }}
+          > */}
+          <PriceCard c title={"STARTER"} Stiitle={"Try and decide."}
           price={0}
           />
+          {/* </motion.div> */}
                  </div>
           <div className="">
           <PriceCard title={"BUNDLE"} Stiitle={"Try and decide."}
