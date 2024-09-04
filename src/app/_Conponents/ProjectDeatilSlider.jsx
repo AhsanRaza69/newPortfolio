@@ -10,9 +10,7 @@ const Projectdeslider = ({img}) => {
 
   return (
     <div className="  text-white    mx-auto    " >
-    <div>
-       ahsan ks e trhesa betscn gj <s></s>
-    </div>
+  
        
         <div className="  flex px-4 rounded-lg justify-center ">
         <Image src={img} className='  w-full  rounded-md ' alt='Logo'
