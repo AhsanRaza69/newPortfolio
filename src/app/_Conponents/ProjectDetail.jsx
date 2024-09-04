@@ -8,9 +8,11 @@ import Blackline from './Blackline';
 
 const ProjectDetail = () => {
 
-  const { dynamicRouteCOn } = useSelector((state) => state.store)
+  const { dynamicRouteCOn  , details} = useSelector((state) => state.store)
   const dispatch = useDispatch()
-  console.log(dynamicRouteCOn);
+  // console.log(dynamicRouteCOn);
+  console.log(details)
+  console.log(details?.img)
   return (
     <div className="">
       {
@@ -30,7 +32,7 @@ const ProjectDetail = () => {
                <div className=" grid gap-4 grid-cols-1  lg:grid-cols-2 ">
                 <div className=" relative  grid-cols-1">  
                   
-                <Projectdeslider/>
+                <Projectdeslider img={details.img} para={details.para}/>
                 </div>
                 <div className=" flex flex-col gap-6  text-gray-300">
                   <h2 className=' font-bold text-[clamp(24px,5vw,34px)]'>NFT Dashboard Application Development.</h2>
@@ -43,7 +45,7 @@ const ProjectDetail = () => {
                     <Projectdetailspan name={"Budget"} detail={"$100000+"} />
                   </div>
                 </div>
-
+                
                </div>
            <Blackline/>
            <p>

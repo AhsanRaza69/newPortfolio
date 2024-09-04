@@ -4,11 +4,16 @@ export const Storeslice  = createSlice({
   name: 'store',
   initialState: {
     dynamicRouteCOn: false,
+    details : {
+      img : "",
+      toppara:""
+    }
   },
   reducers: {
-    DynamicDAtaFun: (state,actions) => {
+    DynamicDAtaFun: (state,action) => {
       state.dynamicRouteCOn  =  !state.dynamicRouteCOn
-    },
+      state.details  = action.payload
+    }
   
 }
 });

@@ -7,7 +7,7 @@ const Icons = ({icon,link}) => {
         <Link href={link}>
         {icon}
         </Link>
-
+       
     </div>
   )
 }
