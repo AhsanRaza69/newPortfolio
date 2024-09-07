@@ -134,7 +134,7 @@ const Header = () => {
                                 {/* <h2 className='darktext'>INBIO</h2> */}
                             </motion.div>
                             <motion.h2 
-                            variants={itemVariants}>Inbio is a all in one personal portfolio WordPress theme. You can customize everything.</motion.h2>
+                            variants={itemVariants}>Welcome to my personal space, where creativity meets ​passion! I'm Aamir Khan, a dedicated graphic designer ​with a flair for crafting compelling visuals that captivate ​and inspire. With a keen eye for detail and a love for ​aesthetics, I strive to bring your ideas to life through ​innovative design solutions.</motion.h2>
                             <hr className=' w-full my-2 border-gray-300' />
                             <motion.ul
                              className=' flex flex-col  gap-2 ' >

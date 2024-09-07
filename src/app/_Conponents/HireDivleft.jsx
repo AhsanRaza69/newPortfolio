@@ -21,12 +21,12 @@ const HireDivleft = () => {
             <span>
                 <p className='' >Phone:
                     <span className=''>
-                    +01234567890
+                    03554235490
                     </span>
                 </p>
                 <p className='' > Email: 
                     <span className=''>
-                   admin@example.com
+                   sokhmir111@gmail.com
                     </span>
                 </p>
             </span>

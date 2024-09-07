@@ -18,10 +18,10 @@ const HeroSec = () => {
         <div className="   flex justify-center relative ">
 
           <div className="flex-col flex gap-y-4  justify-center  text-center ">
-            <h3 className=' text-[clamp(12px,5vw,36px)] text-darkcolor playfair'>👋my name is Inbio & I am a freelance</h3>
-            <h1 className=' z-10  font-[900] archivor  text-[clamp(30px,9vw,130px)] '>Webdesigner</h1>
+            <h3 className=' text-[clamp(12px,5vw,36px)] text-darkcolor playfair'>👋my name is Aamir Khan & I am a Graphic Designer</h3>
+            <h1 className=' z-10  font-[900] archivor  text-[clamp(30px,9vw,100px)] '>Graphic Designer</h1>
             <h2 className=' playfair text-[clamp(30px,9vw,130px)]  oul'>&Photographer</h2>
-            <p className=' text-xs  lg:text-lg text-darkcolor  sm:text-right'>based in Nevada, USA ❤️</p>
+            <p className=' text-xs  lg:text-lg text-darkcolor  sm:text-right'>based in Gilgit, Pakistan ❤️</p>
 
             <motion.div
               initial={{y:600, opacity : 0}}
