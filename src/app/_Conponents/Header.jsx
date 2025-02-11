@@ -90,7 +90,7 @@ const Header = () => {
                 <ul className=' flex  gap-8 items-center' >
                     {
                         links.map((item, ind) => (
-                            <li key={ind} className={` navLinks cursor-pointer  hover:text-webred duration-300      font-medium text-[13px] hidden lg:flex  text-darkcolor uppercase`}>
+                            <li key={ind} className={` navLinks cursor-pointer  hover:text-webred duration-300      font-medium text-[13px] hidden md:flex  text-darkcolor uppercase`}>
                                 <Link
                                     to={item.adress}
                                     spy={true}
@@ -113,7 +113,7 @@ const Header = () => {
       </Link>
     </div>
                 </ul>
-                <div className=" lg:hidden p-3 ml-3 z-50  bg-zinc-900 rounded-full text-webred">
+                <div className=" md:hidden p-3 ml-3 z-50  bg-zinc-900 rounded-full text-webred">
                     <IoMenu size={25} onClick={() => setNav(!Nav)} />
                 </div>
                 {

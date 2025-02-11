@@ -8,8 +8,8 @@ import Blackline from './Blackline'
 const HIreSec = () => {
   return (
     <div className=" my-3" id='hireme'>
-      <Container className=' flex flex-col  poppins'  >
-       <div className=" w-full">
+      <Container className=' flex justify-center items-center flex-col  poppins'  >
+       <div className=" md:w-[70%]">
        <div className=" text-center">
         <ReUseHeading topPara={"Let's meet!"}  mainTitle={"Hire Me 🚣"}/> 
         </div>
